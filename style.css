@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #1F2937;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.main {
+    background: var(--gray-100, #F9FAFB);
+    max-width: 768px;
+    margin: 0 auto;
+
+}
+
+.main .header {
+    padding: 16px;
+    background-color: #fff;
+}
+
+.header img {
+    width: 66px;
+    height: 24px;
+    flex-shrink: 0;
+
+}
+
+.hero {
+
+    padding: 0 16px;
+    position: relative;
+}
+
+.hero svg.circal {
+    position: absolute;
+    top: -13px;
+    z-index: 1;
+    left: 26px;
+    width: 226px;
+    height: 226px; filter: blur(40px); 
+}
+
+.hero svg.circal2 {
+    z-index: 1;
+    position: absolute;
+    top: 52%;
+    right: 9px;
+    width: 226px;
+    height: 226px;
+}
+
+.hero .hero-content {
+    z-index: 2;
+    position: relative;
+   
+
+}
+.hero::before{
+    content: "";
+    top: 0px;
+    left: 26px;
+    width: 226px;
+    z-index: 1;
+    height: 226px;
+    position: absolute;
+    background-image: url(img/headerbg.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.hero::after {
+    content: "";
+    top: 172px;
+    right: 9px;
+    width: 226px;
+    z-index: 1;
+    height: 226px;
+    position: absolute;
+    background-image: url(img/headerbg2.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+
+.hero .hero-content h2 {
+    max-width: 307px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 44px;
+    color: var(--gray-800, #1F2937);
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.hero .hero-content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    color: var(--gray-800, #374151);
+    text-align: center;
+    padding-bottom: 31px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.hero .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17px;
+}
+
+.hero .buttons a {
+    z-index: 2;
+    color: var(--White, #FFF);
+    font-weight: 400;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.partners .partners-img-main {
+    max-width: 330px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
+
+.partners {
+    position: relative;
+    z-index: 2;
+}
+
+.partners .heading {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.partners .heading span {
+    color: var(--gray-800, #374151);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    /* 133.333% */
+}
+
+.padd {
+    padding-bottom: 32px;
+}
+
+.partners .partner-img {
+
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    justify-content: center;
+    
+
+}
+
+.benefits {
+    padding: 0 16px;
+}
+
+.benefits .box {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 16px;
+    border: 0.2px solid #FFDDE0;
+    margin-bottom: 20px;
+    padding: 16px 8px;
+}
+
+/* .benefits .box img {
+    width: 65px;
+} */
+
+.benefits .box h2 {
+    padding-top: 12px;
+    padding-bottom: 8px;
+    margin: 0;
+    color: var(--gray-800, #1F2937);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.benefits .box p {
+    margin: 0;
+    color: var(--gray-800, #374151);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer {
+    padding: 40px 16px;
+    background: var(--blue-100, #EFF6FF);
+}
+
+.footer h3 {
+    color: var(--gray-800, #1F2937);
+    margin: 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+
+}
+
+.footer p {
+    margin: 0;
+    color: var(--gray-800, #374151);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 39px;
+}
+
+.footer .footer-btn a {
+    background: var(--blue-700, #0F62FE);
+    color: var(--White, #FFF);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 10px 14px;
+
+    border-radius: 4px;
+
+}
